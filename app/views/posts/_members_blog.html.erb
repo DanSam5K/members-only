@@ -9,36 +9,28 @@
     <div class="media-content">
       <div class="content">
         <p>
-          <strong><%= post.member.name %></strong><br />
-            <small>@<%= post.member.username %></small><br/>
-            <small><%= post.created_at.strftime("Created: %m-%d-%Y at: %H:%M")%></small>
-          <br>
+        <strong><%= current_member.name %></strong><br />
+        <small><%= current_member.username %></small>
               <%= post.title %><br>
               <%= post.body%>
         </p>
       </div>
       <nav class="level is-mobile">
         <div class="level-left">
-              <%= link_to post, style: 'text-decoration:none;', class: "level-item" do %>
+              <%= link_to posts_path, style: 'text-decoration:none;', class: "level-item" do %>
                 <span class="icon"><i class="fa fa-link" aria-hidden="true"></i></span>
-              <%end%>
-              <%= link_to edit_post_path(post), style: 'text-decoration:none;', class: "level-item" do%>
-                <span class="icon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-              <%end%>
-              <%= link_to post, method: :delete, data: { confirm: 'Are you sure?'} do %>
-              <span class="icon"><i class="fas fa-trash"></i></span>
-              <%end%>
+              <% end %>
         </div>
         <div class="level-right">
-              <small class="level-item"><%= post.updated_at.strftime("Updated: %m-%d-%Y at: %H:%M")%></small>
+              <small class="level-item"><%= post.updated_at.strftime("Updated: %m-%d-%Y at: %H:%M") %></small>
         <div>
       </nav>
     </div>
-    <%= link_to post, method: :delete, data: { confirm: 'Are you sure?'} do %>
+    <%= link_to root_path, method: :delete, data: { confirm: 'Are you sure?'} do %>
     <div class="media-right">
       <button class="delete"></button>
     </div>            
-    <%end%>
+    <% end %>
     </article>
     </div>
-    <%end%>
+    <%end %>
