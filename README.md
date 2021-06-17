@@ -11,11 +11,13 @@
 
 - Clone the repo: $ git clone
 - Run `bundle install`  in your terminal to install the Ruby gems.
+- Run `rails webpacker:install` or `npm install` to install webpacker
 - Run `rails db:create` to create DB before migration
 - Run `rails db:migrate`  in your terminal to migrate to db databases.
 - Run `$ rails server` to start your local host.
 - In your terminal go to (http://127.0.0.1:3000/) 
 - Sign up for a session and write new "secrets" or you can just watch them anonymously!
+
 ## BUILT WITH
 
 - Ruby
