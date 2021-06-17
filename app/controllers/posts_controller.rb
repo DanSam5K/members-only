@@ -1,9 +1,10 @@
 class PostsController < ApplicationController
   before_action :set_post, only: %i[ show edit update destroy ]
-  before_action :authenticate_member!, except: [:new, :create]
+  before_action :authenticate_member!, except: [:index, :new, :create]
   # GET /posts or /posts.json
   def index
     @posts = Post.all
+    @post = Post.new
   end
 
   # GET /posts/1 or /posts/1.json
@@ -51,7 +52,7 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     respond_to do |format|
-      format.html { redirect_to posts_url, notice: "Post was successfully destroyed." }
+      format.html { redirect_to root_path, notice: "Post was successfully destroyed." }
       format.json { head :no_content }
     end
   end

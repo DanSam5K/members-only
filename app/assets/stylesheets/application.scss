@@ -15,7 +15,18 @@
  */
 
  @import "bulma";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
 
- .notification:not(:last-child) {
+.notification{
+    border-radius: 0;
+}
+.navbar-brand .title {
+	color: white;
+}
+a:link { 
+    color: #333333;
+  }
+.notification:not(:last-child) {
     margin-bottom: 0;
   }
