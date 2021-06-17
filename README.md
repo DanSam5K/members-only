@@ -1,6 +1,11 @@
-## About
+![](https://img.shields.io/badge/Microverse-blueviolet) ![](<https://img.shields.io/badge/-Ruby-rgb(199%2C%2032%2C%2039)?style=plastic&logo=ruby>)
 
-> In this app, we elaborate authentications for the member so that he can have access to create, delete and modify if he is a registered user. If you are not a registered user, you can only look at the publications but without knowing who the author was or any reference to posts
+# Members-Only
+
+> In this app, we elaborate authentications for the member so that he can have access to create, delete and modify if he is a registered user. If you are not a registered user, you can only look at the publications but without knowing who the author was or any reference to posts.
+
+![screenshot](app/assets/images/memebrsonly.png)
+
 
 ## Usage 
 
@@ -37,12 +42,15 @@ Give a ⭐️ if you like the project
 
 ## 🤝 CONTRIBUTING
 - Contributions, issues, and feature requests are welcome!
-Feel free to check the issues page. Show your support
-Give a ⭐️ if you like this project!
+Feel free to check the [issues page](https://github.com/DanSam5K/members-only/issues) 
+- Show your support
+- Give a ⭐️ if you like this project!
+
+
 
 ## ACKNOWLEDGMENTS
 
 - Members-Only Project by Microverse.
 
 ## 📝 License MIT
-- This project is [MIT](./LICENSE) licensed.
+- This project is [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) licensed.
