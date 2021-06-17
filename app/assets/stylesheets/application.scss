@@ -14,19 +14,22 @@
  *= require_self
  */
 
- @import "bulma";
- @import "font-awesome-sprockets";
- @import "font-awesome";
+@import "bulma";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
-.notification{
-    border-radius: 0;
+.notification {
+  border-radius: 0;
 }
+
 .navbar-brand .title {
-	color: white;
+  color: white;
 }
-a:link { 
-    color: #333333;
-  }
+
+a:link {
+  color: #333;
+}
+
 .notification:not(:last-child) {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
+}
